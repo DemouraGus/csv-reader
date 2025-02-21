@@ -16,7 +16,7 @@ def format_phone(phone)
   digits = phone.gsub(/\D/, '')
 
   if digits.length == 10
-    "(#{digits[0..2]})#{digits[3..5]}-#{digits[6..9]}"
+    "(#{digits[0..2]}) #{digits[3..5]}-#{digits[6..9]}"
   else
     "INVALID"
   end
